@@ -15,5 +15,5 @@ spec:
 #      command: ["sh","/script1.sh"]
 #      args: ["one","two","three"]
     - name: alpine
-      image: chaitu1812/devops78]
+      image: alpine
       args: ["date"]
