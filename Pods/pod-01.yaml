@@ -4,4 +4,5 @@ metadata:
   name: nginxpod
 spec:
   containers:
-    - name: nginx
+    - name: c1
+      image: nginx
