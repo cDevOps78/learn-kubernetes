@@ -13,4 +13,4 @@ spec:
     - name: alpine
       image: chaitu1812/devops78
       command: ["sh","/script1.sh"]
-      args: ["one","two","three","four","5"]
+      args: ["one","two","three"]
