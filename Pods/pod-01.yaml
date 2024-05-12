@@ -16,5 +16,5 @@ spec:
 #      args: ["one","two","three"]
     - name: alpine
       image: alpine
-      command: ["sh"]
+      command: ["sh","-c"]
       args: ["date"]
