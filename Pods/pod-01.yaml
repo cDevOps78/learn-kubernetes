@@ -10,11 +10,11 @@ spec:
 #      image: alpine
 #      command: ["/bin/sh"]
 #      args: ["-c","while true; do echo chaitu; sleep 5;done"]
-#    - name: alpine
-#      image: chaitu1812/devops78
-#      command: ["sh","/script1.sh"]
-#      args: ["one","two","three"]
     - name: alpine
-      image: alpine
-      command: ["sh","-c"]
-      args: ["date"]
+      image: chaitu1812/devops78
+      # command: ["sh","/script1.sh"]
+      args: ["one","two","three"]
+#    - name: alpine
+#      image: alpine
+#      command: ["sh","-c"]
+#      args: ["date"]
