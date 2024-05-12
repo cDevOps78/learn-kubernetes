@@ -6,3 +6,7 @@ spec:
   containers:
     - name: c1
       image: nginx
+    - name: c2
+      image: alpine
+      command: ["/bin/sh"]
+      args: ["-c","while true; do echo chaitu; sleep 5;done"]
