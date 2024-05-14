@@ -6,3 +6,10 @@ spec:
   containers:
     - name: c1
       image: nginx
+      startupProbe:
+        exec:
+          command:
+            - cat
+            - /usr/share/nginx/html/index.html
+        initialDelaySeconds: 10
+        failureThreshold: 2
