@@ -13,3 +13,4 @@ spec:
             - /usr/share/nginx/html/index.html
         initialDelaySeconds: 40
         failureThreshold: 2
+        periodSeconds: 20
