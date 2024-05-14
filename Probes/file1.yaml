@@ -11,5 +11,5 @@ spec:
           command:
             - cat
             - /usr/share/nginx/html/index.html
-        initialDelaySeconds: 10
+        initialDelaySeconds: 30
         failureThreshold: 2
