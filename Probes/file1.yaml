@@ -10,6 +10,6 @@ spec:
         exec:
           command:
             - cat
-            - /usr/share/nginx/html/index.html
+            - /usr/share/nginx/html/index1.html
         initialDelaySeconds: 30
         failureThreshold: 2
