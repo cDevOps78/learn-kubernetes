@@ -6,7 +6,7 @@ spec:
   containers:
     - name: c1
       image: nginx
-      livenessProbe:
+      readinessProbe:
         exec:
           command:
             - cat
