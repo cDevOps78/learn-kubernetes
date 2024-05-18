@@ -1,3 +1,3 @@
 FROM alpine
 COPY run.sh /run.sh
-CMD ["bash","/run.sh"]
+CMD ["sh","/run.sh"]
