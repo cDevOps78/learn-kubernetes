@@ -48,6 +48,9 @@ spec:
   containers:
   - name: c1
     image: chaitu1812/configmap-k06
+    env:
+      - name: Training
+        value: Kubernetes
     envFrom:
       - configMapRef:
           name: conf-map1
