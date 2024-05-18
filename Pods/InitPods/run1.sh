@@ -2,12 +2,12 @@
 
 for i in $PARAMS
 do
-        key=$(echo $i | awk -F"," '{print $1}')
+        param=$(echo $i | awk -F"," '{print $1}')
         value=$(echo $i |  awk -F"," '{print $2}')
         value=`aws ssm get-parameter --name $value --region ap-south-1 --query  "Parameter.Value" --output text`
-        [ -z $value ] && echo -e "\e[31mVARIABLE IS MISSING :$key \e[0m" && exit 1
+        [ -z $value ] && echo -e "\e[31mPARAMETER IS MISSING :$param \e[0m" && exit 1
 
-        echo "export $key:$value" >> /tmp/params
+        echo "export $key:$value" >> /tmp/param
 done
 
 
