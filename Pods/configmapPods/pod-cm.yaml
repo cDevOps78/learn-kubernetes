@@ -1,7 +1,26 @@
+#---
+#apiVersion: v1
+#kind: ConfigMap
+#metadata:
+#  name: conf-map1
+#data:
+
+# Pname Papp Pversion Pcompo
 ---
 apiVersion: v1
-kind: ConfigMap
+kind: Pod
 metadata:
-  name: conf-map1
-data:
-
+  name: pod1
+spec:
+  containers:
+    name: c1
+    image: chaitu1812/configmap-k06
+    env:
+      - name: Pname
+        value: "Roboshop"
+      - name: Papp
+        value: "Roboshop"
+      - name: Pversion
+        value: "Roboshop"
+      - name: Pcompo
+        value: "Roboshop"
