@@ -52,7 +52,7 @@ spec:
       - name: Training
         value: Kubernetes
       - name: movie
-        value: "cli-RRR"
+        value: "cli-RRR"  # we can value from configmMap  value
     envFrom:
       - configMapRef:
           name: conf-map1
