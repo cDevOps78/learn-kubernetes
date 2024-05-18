@@ -4,5 +4,5 @@ CMD ["sh","/run.sh"]
 
 ENV Pname="CHAITU" \
     Papp="nginx"   \
-    Pversion="v1.0" \
+    Pversion="v1.0"
 
