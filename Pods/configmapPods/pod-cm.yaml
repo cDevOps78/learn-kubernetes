@@ -51,4 +51,5 @@ spec:
     envFrom:
       - configMapRef:
           name: conf-map1
-
+      - configMapRef:
+          name: conf-map2
