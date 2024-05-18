@@ -6,7 +6,7 @@ metadata:
 data:
   Pname: "RoboShop"
   Papp: "frontend"
-  Pversion: "v1.0"
+  Pversion: ""
   Pcompo: "nginx"
 
 # ----------------------------------------------------------
