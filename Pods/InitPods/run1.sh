@@ -2,8 +2,8 @@
 
 for i in $PARAMS
 do
-        key=$(echo $i | awk '{print $1}' | awk -F"," '{print $1}')
-        value=$(echo $i | awk '{print $1}' | awk -F"," '{print $2}')
+        key=$(echo $i | awk -F"," '{print $1}')
+        value=$(echo $i |  awk -F"," '{print $2}')
         value=`aws ssm get-parameter --name $value --region ap-south-1 --query  "Parameter.Value" --output text`
         [ -z $value ] && echo -e "\e[31mVARIABLE IS MISSING :$i \e[0m" && exit 1
 
