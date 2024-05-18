@@ -6,9 +6,18 @@ metadata:
 data:
   Pname: "RoboShop"
   Papp: "frontend"
-  Pversion: ""
+  Pversion: "v1.0"
   Pcompo: "nginx"
 
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: conf-map2
+data:
+  movie: "RRR"
+
+---
 # ----------------------------------------------------------
 # Pname Papp Pversion Pcompo
 #---
@@ -31,7 +40,6 @@ data:
 #        value: "goood"
 
 #---------------------------------------------------------------
----
 apiVersion: v1
 kind: Pod
 metadata:
@@ -43,3 +51,4 @@ spec:
     envFrom:
       - configMapRef:
           name: conf-map1
+
