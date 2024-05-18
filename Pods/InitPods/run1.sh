@@ -1,8 +1,4 @@
-
-# PARAMS="app_name,APP_NAME app_project_name,APP_PROJECT_NAME app_versivi
-
-
-
+# PARAMS="app_name,APP_NAME app_project_name,APP_PROJECT_NAME app_version,APP_VERSION"
 
 for i in $PARAMS
 do
