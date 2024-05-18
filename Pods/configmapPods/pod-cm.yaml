@@ -23,4 +23,4 @@ spec:
       - name: Pversion
         value: "Roboshop"
       - name: Pcompo
-        value: "Roboshop"
+        value: ""
