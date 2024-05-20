@@ -16,7 +16,7 @@ FROM node:20-slim
 WORKDIR /app
 
 COPY --from=builder /app/node_modules/ node_modules
-COPY --from=builder /app/*.js .
+COPY --from=builder /app/*.js ./
 COPY --from=builder /app/package.json .
 
 CMD ["node","index.js"]
