@@ -22,5 +22,5 @@ COPY --from=builder /app/package.json .
 CMD ["node","index.js"]
 
 
-
+# Provide DB_HOST=<>  at run time.
 
