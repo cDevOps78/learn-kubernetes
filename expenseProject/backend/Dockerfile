@@ -12,7 +12,7 @@ RUN npm install
 
 # Multi-Stage build starts.
 
-docFROM node:20-slim
+FROM node:20-slim
 WORKDIR /app
 
 COPY --from=builder /app/node_modules/ node_modules
