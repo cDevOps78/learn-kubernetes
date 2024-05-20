@@ -8,4 +8,4 @@ ADD nginx.conf /etc/nginx/nginx.conf
 
 RUN unzip /tmp/expense-frontend-v2.zip -d /usr/share/nginx/html/
 
-ADD expense.conf /etc/nginx/conf.d/expense.conf
+# ADD expense.conf /etc/nginx/conf.d/expense.conf
