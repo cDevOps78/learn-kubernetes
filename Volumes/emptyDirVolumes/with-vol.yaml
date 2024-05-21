@@ -9,6 +9,8 @@ spec:
       volumeMounts:
         - name: empty-volume
           mountPath: /emptyVol
+        - name: empty-volume
+          mountPath: /emptyVol1
   volumes:
     - name: empty-volume
       emptyDir: {}
