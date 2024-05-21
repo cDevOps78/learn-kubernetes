@@ -16,7 +16,9 @@
 #      emptyDir: {}
 ##/var/lib/kubelet/pods/{podid}/volumes/kubernetes.io~empty-dir/
 
-# ----------------------------------------------------------------------------
+# ---------------------------------
+# Example-2
+#----------------------------------
 apiVersion: v1
 kind: Pod
 metadata:
