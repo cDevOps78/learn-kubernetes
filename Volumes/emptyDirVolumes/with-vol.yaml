@@ -33,9 +33,9 @@ spec:
     - name: c2
       image: alpine
       args:
-        - 'sh'
-        - '-c'
-        - 'while true; do count=1;echo "Hello${count}-chaitu" | tee /emptyVol/index.html; ((count++));sleep 5;done'
+        - sh
+        - -c
+        - while true; do count=1;echo "Hello${count}-chaitu" | tee /emptyVol/index.html; ((count++));sleep 5;done
         - name: empty-volume
           mountPath: /emptyVol
   volumes:
