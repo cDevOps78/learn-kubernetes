@@ -6,6 +6,9 @@ spec:
   containers:
     - name: c1
       image: nginx
+      volumeMounts:
+        - name: empty-volume
+          path: /emptyVol
   volumes:
     - name: empty-volume
       emptyDir: {}
