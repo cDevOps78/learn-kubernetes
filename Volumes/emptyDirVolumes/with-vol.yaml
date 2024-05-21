@@ -35,7 +35,7 @@ spec:
       args:
         - "sh"
         - "-c"
-        - "while true; do count=1;echo Hello${count}-chaitu | tee -a /emptyVol/index.html; count=$((count+1));sleep 5;done"
+        - "while true; do count=$((count+1));echo Hello${count}-Chaithanya | tee -a /emptyVol/index.html;sleep 5;done"
       volumeMounts:
       - name: empty-volume
         mountPath: /emptyVol
