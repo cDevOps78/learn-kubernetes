@@ -1,3 +1,22 @@
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: pod1
+#spec:
+#  containers:
+#    - name: c1
+#      image: nginx
+#      volumeMounts:
+#        - name: empty-volume
+#          mountPath: /emptyVol
+#        - name: empty-volume         # Two volumes have same data & one volume
+#          mountPath: /emptyVol1
+#  volumes:
+#    - name: empty-volume
+#      emptyDir: {}
+##/var/lib/kubelet/pods/{podid}/volumes/kubernetes.io~empty-dir/
+
+# ----------------------------------------------------------------------------
 apiVersion: v1
 kind: Pod
 metadata:
@@ -8,9 +27,15 @@ spec:
       image: nginx
       volumeMounts:
         - name: empty-volume
-          mountPath: /emptyVol
+          mountPath: /usr/share/nginx/html/
+    - name: c2
+      image: alpine
+      args:
+        - 'sh'
+        - '-c'
+        - 'while true; do count=1;echo "Hello${count}-chaitu" | tee /emptyVol/index.html; ((count++));sleep 5;done'
         - name: empty-volume
-          mountPath: /emptyVol1
+          mountPath: /emptyVol
   volumes:
     - name: empty-volume
       emptyDir: {}
