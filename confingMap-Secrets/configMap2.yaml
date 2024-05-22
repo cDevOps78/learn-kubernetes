@@ -32,6 +32,4 @@ spec:
     - name: config-vol1
       configMap:
         name: configmap1
-        items:
-          - key: "ProjectApp"
-            path: "chaituApp"
+
