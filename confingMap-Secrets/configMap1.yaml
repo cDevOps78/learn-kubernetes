@@ -19,7 +19,8 @@ spec:
     - name: c1
       image: alpine
       env:
-        PARAMS: "ProjectName ProjectComponent ProjectVersion ProjectApp"
+        - name: PARAMS
+          value: "ProjectName ProjectComponent ProjectVersion ProjectApp"
       envFrom:
         - configMapRef:
             name: configmap1
