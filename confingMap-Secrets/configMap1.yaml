@@ -28,8 +28,8 @@ spec:
       args:
         - > 
           for i in $PARAMS; do
-             var="\$$i"  
-             [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1    
+             var="\$$i";  
+             [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1 ;    
           done
           
 
