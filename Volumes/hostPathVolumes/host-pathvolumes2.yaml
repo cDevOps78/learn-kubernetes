@@ -17,4 +17,4 @@ spec:
       hostPath:
         path: /tmp/HostPath
         type: Directory
-        readOnly: true
+       ## readOnly: true
