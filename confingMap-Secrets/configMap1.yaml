@@ -31,7 +31,7 @@ spec:
           for i in "$PARAMS" ; do
             var="\$${i}"
             echo "$var"
-            sleep 6
+            sleep 20
           done
           
 
