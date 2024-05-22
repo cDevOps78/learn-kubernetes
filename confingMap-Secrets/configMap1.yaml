@@ -27,6 +27,7 @@ spec:
       command: ["sh","-c"]
       args:
         - > 
+          set -x
           for i in $PARAMS; do
             var="\$$i" 
             echo "$(eval echo $var)" 
