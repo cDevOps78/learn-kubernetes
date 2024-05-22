@@ -16,4 +16,5 @@ spec:
     - name: host-volume
       hostPath:
         path: /tmp/HostPath
+        type: Directory
         readOnly: true

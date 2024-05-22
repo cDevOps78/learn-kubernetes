@@ -12,6 +12,7 @@ File	             Error if file missing
 --------------------------
 Leverage read-only Access
 Use read-only mounts whenever possible:
+
 hostPath:
   path: /var/log
   readOnly: true
