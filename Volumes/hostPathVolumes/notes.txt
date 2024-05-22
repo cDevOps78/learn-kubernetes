@@ -37,3 +37,19 @@ spec:
     hostPath:
       path: /tmp
 ------------------------------------
+
+  - image: busybox
+    name: main-container
+    args:
+     - /bin/sh
+     - -c
+     - >
+      while true; do
+        echo "$(date) INFO hello from main-container" >> /var/log/myapp.log ;
+        sleep 1;
+      done
+    volumeMounts:
+    - name: log
+      mountPath: /var/log
+
+--------------------------------------
