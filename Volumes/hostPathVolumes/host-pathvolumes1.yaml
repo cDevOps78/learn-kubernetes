@@ -14,7 +14,7 @@ spec:
       image: nginx
       volumeMounts:
         - name: nginxvol
-          mountPath: /usr/share/nginx/html
+          mountPath: /usr/share/nginx/html/
   volumes:
     - name: nginxvol
       hostPath:
