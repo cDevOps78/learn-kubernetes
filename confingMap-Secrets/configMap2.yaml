@@ -11,7 +11,7 @@ data:
     This is Project - V4.0.0
   ProjectApp: |
     This is Project - nginx1
-    This is Project1 - nginx1
+    This is Project1 - 
 
 ---
 apiVersion: v1
