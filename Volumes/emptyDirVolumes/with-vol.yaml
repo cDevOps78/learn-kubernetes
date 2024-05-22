@@ -14,10 +14,36 @@
 #  volumes:
 #    - name: empty-volume
 #      emptyDir: {}
+
 ##/var/lib/kubelet/pods/{podid}/volumes/kubernetes.io~empty-dir/
+# ----------------------
+# example -2
+#-----------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+spec:
+  containers:
+    - name: c1
+      image: nginx
+      volumeMounts:
+        - name: empty-volume1
+          mountPath: /emptyVol1
+        - name: empty-volume2
+          mountPath: /emptyVol2
+  volumes:
+    - name: empty-volume1
+      emptyDir: {}
+    - name: empty-volume2
+      emptyDir: {}
+
+
+---
 
 # ---------------------------------
-# Example-2
+# Example-3
 #----------------------------------
 apiVersion: v1
 kind: Pod
