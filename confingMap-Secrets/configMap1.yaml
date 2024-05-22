@@ -28,7 +28,7 @@ spec:
       args:
         - > 
           for i in $PARAMS; do
-            var="\$$i" ;
+            var="\$$i" 
             [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1  || echo "$i = $(eval echo $var)" ;
             sleep 6;
           done
