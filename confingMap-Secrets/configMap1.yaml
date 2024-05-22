@@ -27,9 +27,10 @@ spec:
       command: ["sh","-c"]
       args:
         - > 
-          for i in $PARAMS; do # ProjectName ProjectComponent ProjectVersion ProjectApp 
+          for i in $PARAMS
+          do # ProjectName ProjectComponent ProjectVersion ProjectApp 
           var="\$$i"  # $ProjectName $ProjectComponent $ProjectVersion $ProjectApp
-          [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1  # eval echo $ProjectName
+          [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1    # eval echo $ProjectName
           done
           
 
