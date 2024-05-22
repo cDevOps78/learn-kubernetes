@@ -34,4 +34,4 @@ spec:
         name: configmap1
         items:
           - key: "ProjectApp"
-            path: "ProjectApp"
+            path: "chaituApp"
