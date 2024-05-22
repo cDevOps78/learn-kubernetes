@@ -7,6 +7,8 @@
   usernames, passwords, xml-files, properties-files, db-connection details, api-keys. which your application used. outside of application itself.
   configuration as files.
 
+  Run-time configurations are externally mounted at run time, respectively to environments.
+
 
 configMap ConfigMap ( createContainerConfigError )
 --------------------------------------------
