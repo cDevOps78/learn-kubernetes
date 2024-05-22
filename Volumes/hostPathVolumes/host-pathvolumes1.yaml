@@ -19,6 +19,6 @@ spec:
     - name: nginxvol
       hostPath:
         path: /tmp/nginxVol
-        type: # Directory optional
+        type: Directory
 
 
