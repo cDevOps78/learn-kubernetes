@@ -29,7 +29,7 @@ spec:
         - > 
           set -x;
           for i in $PARAMS ; do 
-            var="\$$i";
+            var=\$$i ;
             echo "$var";
             sleep 5;
           done
