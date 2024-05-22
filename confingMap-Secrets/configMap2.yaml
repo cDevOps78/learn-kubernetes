@@ -27,7 +27,8 @@ spec:
            name: configmap1
      volumeMounts:
        - name: config-vol1
-         mountPath: /tmp/config/
+         mountPath: /tmp/config/ProjectApp
+         subPath: ProjectApp
   volumes:
     - name: config-vol1
       configMap:
