@@ -1,0 +1,19 @@
+# This yaml file to check How readOnly hostPath volume is working
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+spec:
+  containers:
+    - name: alpine
+      image: alpine
+      command: ["sleep","1000"]
+      volumeMounts:
+        - name: host-volume
+          mountPath: /cache-host
+  volumes:
+    - name: host-volume
+      hostPath:
+        path: /tmp/HostPath
+        readOnly: true
