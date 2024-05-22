@@ -6,7 +6,7 @@ spec:
   initContainers:
     - name: initc
       image: alpine
-      args: ["sleep","150"]
+      args: ["sleep","50"]
   containers:
     - name: c1
       image: nginx
