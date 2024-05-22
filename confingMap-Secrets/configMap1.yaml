@@ -28,10 +28,9 @@ spec:
       args:
         - > 
           set -x;
-          for i in "$PARAMS" ; do
-            var="\$${i}"
-            echo "$var"
-            sleep 20
+          for i in $PARAMS ; do 
+            echo "$i"
+            sleep 5
           done
           
 
