@@ -3,8 +3,8 @@ kind: ConfigMap
 metadata:
   name: configmap1
 data:
-  ProjectName: "expense-app"
-  ProjectComponent: "frontend"
+  ProjectName: "expense-app1"
+  ProjectComponent: "frontend1"
   ProjectVersion: |
     This is Project - v1.0.0
     This is Project - V2.0.0
