@@ -1,0 +1,32 @@
+* Decouple environment specific configurations, form you code means image.
+
+* we need to externalise the application configurations
+  from application code, so that same piece-of-code (package) can be used across all environments.
+
+  application should be portable, we need to use same image.
+  usernames, passwords, xml-files, properties-files, db-connection details, api-keys. which your application used. outside of application itself.
+  configuration as files.
+
+
+configMap ConfigMap ( createContainerConfigError )
+--------------------------------------------
+  * kubernetes api used to store non-confidential data in key-value pairs.
+  * pod can consume the configMap data as environmental variables, command line arguments, configuration files as volumes.
+
+
+
+Secret
+------------------------------
+ * kubernetes api used to small amount of sensitive data like passwords, token ,or api-keys.
+ * secrets are similar to configMaps, but specially intended to hold confidential data.
+ * less risk of exposing(data) during workflow creation, edition,viewing.
+ * Opaque, basic-auth,ssh-auth,token,tls,dockerconfigjson.
+
+
+
+           while true
+           do
+           echo "All Parameters are Passed Successfully"
+           sleep 3
+           done
+
