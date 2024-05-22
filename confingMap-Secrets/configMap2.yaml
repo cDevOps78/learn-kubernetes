@@ -27,7 +27,7 @@ spec:
            name: configmap1
      volumeMounts:
        - name: config-vol1
-         mountPath: /tmp/config
+         mountPath: /tmp/config/chaituApp
   volumes:
     - name: config-vol1
       configMap:
