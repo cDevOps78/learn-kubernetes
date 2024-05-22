@@ -30,7 +30,7 @@ spec:
           set -x;
           for i in $PARAMS; do
             var="\$$i" 
-            echo "$(eval echo $var)" 
+            echo "$var" 
             sleep 6
           done
           
