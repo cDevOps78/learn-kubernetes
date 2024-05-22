@@ -28,7 +28,7 @@ spec:
            name: config-vol1
      volumeMounts:
        - name: config-vol1
-         path: /tmp/config
+         mountPath: /tmp/config
   volumes:
     - name: config-vol1
       configMap:
