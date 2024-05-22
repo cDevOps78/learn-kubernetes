@@ -27,9 +27,9 @@ spec:
       command: ["sh","-c"]
       args:
         - > 
-          for i in $PARAMS; do
-             var="\$$i";  
-             [ -z `eval echo $var` ] && echo "Parameter is missing: $var" && exit 1 ;    
+          while true; do
+            echo "$(date) INFO hello from main-container" >> /var/log/myapp.log ;
+            sleep 1;
           done
           
 
