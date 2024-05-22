@@ -24,7 +24,7 @@ spec:
      image: nginx
      envFrom:
        - configMapRef:
-           name: config-vol1
+           name: configmap1
      volumeMounts:
        - name: config-vol1
          mountPath: /tmp/config
