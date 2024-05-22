@@ -4,9 +4,12 @@ metadata:
   name: pod1
 spec:
   initContainers:
-    - name: initc
+    - name: init1
       image: alpine
-      args: ["sh","-c","sleep 25 && exit 1"]
+      args: ["sh","-c","sleep 15"]
+    - name: init2
+      image: alpine
+      args: [ "sh","-c","sleep 10" ]
   containers:
     - name: c1
       image: nginx
