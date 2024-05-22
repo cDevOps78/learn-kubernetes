@@ -6,9 +6,9 @@ data:
   ProjectName: "expense-app1"
   ProjectComponent: "frontend1"
   ProjectVersion: |
-    This is Project - v1.0.0
-    This is Project - V2.0.0
-    This is Project - V2.0.0
+    This is Project - v4.0.0
+    This is Project - V4.0.0
+    This is Project - V4.0.0
   ProjectApp: |
     This is Project - nginx
     This is Project1 - nginx1
