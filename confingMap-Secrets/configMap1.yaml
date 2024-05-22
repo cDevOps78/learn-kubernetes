@@ -25,7 +25,7 @@ spec:
         - configMapRef:
             name: configmap1
       command: ["sh","-c"]
-      args: ['for i in $PARAMS; do var="\$$i" ; [ -z `eval echo $var` ] && echo "variable is missing- $i" && exit 1 || echo "$i=$(eval echo $var)"']
+      args: ['for i in $PARAMS; do var="\$$i" ; [ -z `eval echo $var` ] && echo "variable is missing- $i" && exit 1 || echo "$i=$(eval echo $var)"; done']
 
           
             
