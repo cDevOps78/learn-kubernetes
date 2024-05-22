@@ -14,8 +14,9 @@ configMap ConfigMap ( createContainerConfigError )
 --------------------------------------------
   * kubernetes api used to store non-confidential data in key-value pairs.
   * pod can consume the configMap data as environmental variables, command line arguments, configuration files as volumes.
-  * data & binaryData
-
+  * data & binaryData  PENDING...
+  * type of volume is configMap,hostPath,pvc,nfs .etc
+  * kubelet takes some to sync data between pod & configMap
 Secret
 ------------------------------
  * kubernetes api used to small amount of sensitive data like passwords, token ,or api-keys.
