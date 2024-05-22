@@ -29,7 +29,8 @@ spec:
         - > 
           set -x;
           for i in $PARAMS ; do 
-            echo "$i"
+            var="\$$i";
+            echo "$var"
             sleep 5
           done
           
