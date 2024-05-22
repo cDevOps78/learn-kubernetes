@@ -10,8 +10,8 @@ data:
     This is Project - V4.0.0
     This is Project - V4.0.0
   ProjectApp: |
-    This is Project - nginx
-    This is Project1 - nginx1
+    This is Project - backend2
+    This is Project1 - backend1
 
 ---
 apiVersion: v1
