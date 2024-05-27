@@ -14,7 +14,7 @@ spec:
                    - worker1
   containers:
     - name: c1
-      image: nginx
+      image: ngclearinx
 
 ---
 #apiVersion: v1

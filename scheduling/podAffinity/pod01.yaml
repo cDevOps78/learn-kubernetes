@@ -10,7 +10,8 @@ spec:
             matchExpressions:
               - key: name
                 operator: In
-                values: pod_affinity
+                values:
+                - pod_affinity
           topologyKey: "kubernetes.io/hostname"
 
 
