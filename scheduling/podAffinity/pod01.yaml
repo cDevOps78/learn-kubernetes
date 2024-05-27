@@ -9,7 +9,7 @@ spec:
         - labelSelector:
             matchExpressions:
               - key: name
-                operator: In
+                operator: NotIn
                 values:
                 - pod_affinity
           topologyKey: "kubernetes.io/hostname"
