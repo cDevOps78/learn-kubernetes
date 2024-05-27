@@ -37,7 +37,7 @@ spec:
     - name: c1
       image: nginx
   tolerations:
-#     - operator: Exists
-#       effect: NoSchedule
      - operator: Exists
-       effect: NoExecute
+       effect: NoSchedule
+#     - operator: Exists
+#       effect: NoExecute
