@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod01
+spec:
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+              - key: name
+                operator: In
+                values: pod_affinity
+          topologyKey: "kubernetes.io/hostname"
+
+
+  containers:
+    - name: c1
+      image: nginx
+
