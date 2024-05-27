@@ -13,6 +13,20 @@
 #      effect: NoSchedule
 
 ---
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: pod01
+#spec:
+#  containers:
+#    - name: c1
+#      image: nginx
+#  tolerations:
+#    - operator: Exists
+#      effect: NoSchedule
+
+---
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -22,5 +36,6 @@ spec:
     - name: c1
       image: nginx
   tolerations:
-    - operator: Exists
+    - key: name
+      operator: Exists
       effect: NoSchedule
