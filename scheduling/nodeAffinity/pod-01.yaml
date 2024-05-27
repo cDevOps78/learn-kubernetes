@@ -1,3 +1,22 @@
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: pod01
+#spec:
+#  affinity:
+#    nodeAffinity:
+#      requiredDuringSchedulingIgnoredDuringExecution:
+#         nodeSelectorTerms:
+#           - matchExpressions:
+#               - key: node
+#                 operator: In
+#                 values:
+#                   - worker1
+#  containers:
+#    - name: c1
+#      image: nginx
+
+---
 apiVersion: v1
 kind: Pod
 metadata:
@@ -5,9 +24,10 @@ metadata:
 spec:
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-         nodeSelectorTerms:
-           - matchExpressions:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 1
+          preference:
+            matchExpressions:
                - key: node
                  operator: In
                  values:
@@ -15,3 +35,4 @@ spec:
   containers:
     - name: c1
       image: nginx
+
