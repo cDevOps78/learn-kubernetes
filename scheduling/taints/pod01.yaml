@@ -31,7 +31,6 @@ kind: Pod
 metadata:
   name: pod01
 spec:
-  nodeName: ip-172-31-13-37.ap-south-1.compute.internal
   containers:
     - name: c1
       image: nginx
