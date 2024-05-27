@@ -36,6 +36,6 @@ spec:
     - name: c1
       image: nginx
   tolerations:
-    - key: name
+    - key: app
       operator: Exists
       effect: NoSchedule
