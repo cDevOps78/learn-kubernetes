@@ -4,14 +4,14 @@ metadata:
   name: pod01
 spec:
   affinity:
-    podAffinity:
+    podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         - labelSelector:
             matchExpressions:
               - key: name
                 operator: In
                 values:
-                - pod_affinity
+                - pod_anti_affinity
           topologyKey: "kubernetes.io/hostname"
 
 
