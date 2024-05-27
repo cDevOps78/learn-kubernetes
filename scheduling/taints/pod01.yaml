@@ -6,3 +6,8 @@ spec:
   containers:
     - name: c1
       image: nginx
+  tolerations:
+    - key: app
+      value: nginx
+      operator: Equal
+      effect: NoSchedule
