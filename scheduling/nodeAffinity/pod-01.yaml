@@ -29,7 +29,7 @@ spec:
           preference:
             matchExpressions:
                - key: node
-                 operator: In
+                 operator: NotIn
                  values:
                    - worker1
   containers:
