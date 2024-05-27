@@ -23,4 +23,4 @@ spec:
       image: nginx
   tolerations:
     - operator: Exists
-      effect: NoExecute
+      effect: NoSchedule
