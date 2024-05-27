@@ -36,8 +36,8 @@ spec:
   containers:
     - name: c1
       image: nginx
-#  tolerations:
+  tolerations:
 #     - operator: Exists
 #       effect: NoSchedule
-#     - operator: Exists
-#       effect: NoExecute
+     - operator: Exists
+       effect: NoExecute
