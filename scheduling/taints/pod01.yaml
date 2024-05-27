@@ -31,11 +31,13 @@ kind: Pod
 metadata:
   name: pod01
 spec:
+  nodeSelector:
+    app: name
   containers:
     - name: c1
       image: nginx
-  tolerations:
-     - operator: Exists
-       effect: NoSchedule
-     - operator: Exists
-       effect: NoExecute
+#  tolerations:
+#     - operator: Exists
+#       effect: NoSchedule
+#     - operator: Exists
+#       effect: NoExecute
