@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend-pod
+  labels:
+    component: backend
+spec:
+  containers:
+    - name: c1
+      image: chaitu1812/expense-backend
+      ports:
+        - containerPort: 8080
+          name: backend
+      env:
+        - name: DB_HOST
+          value: mysql-service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    component: backend
+  type: ClusterIP
+  ports:
+    - port: 8080
+      name: backend
+
+#
