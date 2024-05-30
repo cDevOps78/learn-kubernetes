@@ -14,7 +14,7 @@ spec:
       env:
         - name: MYSQL_ROOT_PASSWORD
           value: "ExpenseApp@1"
-      volumes:
+      volumeMounts:
         - name: mysql-volume
           mountPath: /var/lib/mysql
   volumes:
