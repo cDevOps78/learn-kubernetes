@@ -20,7 +20,7 @@ kind: Service
 metadata:
   name: frontend-service
 spec:
-  selectors:
+  selector:
     component: frontend
   type: NodePort
   ports:
