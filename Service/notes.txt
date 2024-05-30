@@ -1,0 +1,3 @@
+# pods may go down at anytime & they come up at anytime.
+# kubernetes service comes under network load balancer.
+# DNS lookup or service lookup & service discovery happening inside the cluster.
