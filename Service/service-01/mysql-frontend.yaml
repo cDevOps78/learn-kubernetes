@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql-pod
+  labels:
+    component: mysql
+spec:
+  containers:
+    - name: c1
+      image: chaitu1812/expense-mysql
+      ports:
+        - containerPort: 3306
+          name: mysql
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "ExpenseApp@1"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+spec:
+  selector:
+    component: mysql
+  type: ClusterIP
+  ports:
+    - port: 3306
+      name: frontend
