@@ -1,5 +1,5 @@
-
-for i in $PARAMS
+IFS=" "
+for i in "$PARAMS"
 do
   var=\$${i}
   [ -z `eval echo $var` ] && echo "Parameter is missing: $i" && exit 1 || echo "$i = $(eval echo $var)"
