@@ -1,3 +1,5 @@
+
+# IMP variable P-name is wrong declaration
 apiVersion: v1
 kind: Pod
 metadata:
