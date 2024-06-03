@@ -1,4 +1,4 @@
-IFS=" "
+
 for i in "$PARAMS"
 do
   var=\$${i}
