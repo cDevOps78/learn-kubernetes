@@ -9,3 +9,9 @@ spec:
       env:
         - name: PARAMS
           value: "P_name P_app P_region P_api"
+        - name: P_name
+          value: "roboshop"
+        - name: P_app
+          value: "nginx-top"
+        - name: P_region
+          value: "ap-south-1"
