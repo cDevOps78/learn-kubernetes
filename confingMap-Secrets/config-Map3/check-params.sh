@@ -10,6 +10,4 @@ while true
 do
   echo "All variables is provided"
   echo "Sleeping 4s"
-  sleep 4s
-done
-
+  sleep
