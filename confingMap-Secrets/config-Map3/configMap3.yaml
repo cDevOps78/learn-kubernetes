@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: c1
-      image: configmap3
+      image: chaitu1812/check_params
       env:
         - name: PARAMS
-          value: "P-name P-app P-region P-api"
+          value: "P_name P_app P_region P_api"
