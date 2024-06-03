@@ -15,3 +15,5 @@ spec:
           value: "nginx-top"
         - name: P_region
           value: "ap-south-1"
+        - name: P_api
+          value: "nginx_api"
