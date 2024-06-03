@@ -11,3 +11,4 @@ do
   echo "All variables is provided"
   echo "Sleeping 4s"
   sleep
+done
