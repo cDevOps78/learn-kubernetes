@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-map03
+spec:
+  containers:
+    - name: c1
+      image: configmap3
+      env:
+        - name: PARAMS
+          value: "P-name P-app P-region P-api"
